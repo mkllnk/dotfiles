@@ -1,0 +1,26 @@
+[user]
+	name = Maikel Linke
+	email = maikel@email.org.au
+	signingkey = 027F04AB8F221474
+[alias]
+	ci = commit
+	ca = commit -a
+	cim = commit -m
+	cam = commit -a -m
+	st = status
+        lg = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+        tm = branch -a --no-merged
+        search = log -S
+        s = log -S
+[core]
+	excludesfile = /home/maikel/.gitignore_global
+#[color]
+#	ui = true
+#[push]
+#	default = current
+[merge]
+	tool = meld
+[rerere]
+	enabled = true
+[commit]
+	gpgsign = true
