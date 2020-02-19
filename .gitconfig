@@ -5,6 +5,7 @@
 [alias]
 	ci = commit
 	ca = commit -a
+	cammend = commit -a --amend
 	cim = commit -m
 	cam = commit -a -m
 	st = status
